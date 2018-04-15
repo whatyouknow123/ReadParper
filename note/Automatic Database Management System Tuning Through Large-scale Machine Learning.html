@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>读书笔记1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h3>标题</h3>
+<p>Automatic Database Management System Tuning Through Large-scale Machine Learning</p>
+<h3>作者</h3>
+<ul>
+<li>Dana Van Aken, CMU, Pittsburgh, PA, USA</li>
+<li>Andrew Pavlo, CMU, Pittsburgh, PA, USA</li>
+<li>Geoffrey J.Gordon, CMU, Pittsburgh, PA, USA</li>
+<li>Bohan Zhang, Peking University, Beijing, China</li>
+</ul>
+<h3>来源</h3>
+<p>Acm International Conference on Management of Data, 2017:1009-1024</p>
+<h3>摘要</h3>
+<p>结合监督和非监督的机器学习方法，基于以往的经验和现有的信息，实现了一个自动化的数据库配置调优工具--OtterTune。</p>
+<h3>内容</h3>
+<h5>贡献点</h5>
+<p>训练了一个机器学习模型，能够用于：
+- select the most important knobs
+- map previously unseen database workloads to known workloads
+- recommend knob settings that improve a target objective</p>
+<h5>实验环境</h5>
+<ul>
+<li>两个 OLTP DBMSs(MYSQL, Postgres)</li>
+<li>一个 OLAP DBMS(Vector)</li>
+</ul>
+<h5>配置调优的难点</h5>
+<ul>
+<li>有些参数之间具有依赖性</li>
+<li>有些参数值是连续值</li>
+<li>配置不可重用</li>
+<li>经常增加新的参数</li>
+</ul>
+<h5>OtterTune 简介</h5>
+<ol>
+<li>
+<p>架构图
+<img src="note_1_picture/ottertune-architecture.png" /></p>
+</li>
+<li>
+<p>系统的假设和限制</p>
+<ul>
+<li>controller要有管理员权限</li>
+<li>可能需要重启数据库</li>
+<li>保证数据库正常安装</li>
+</ul>
+</li>
+<li>
+<p>数据处理流程
+<img src="note_1_picture/data_process.png" /></p>
+<ul>
+<li>workload characterization 主要有两个内容：一个是收集统计信息， 另一个是减少冗余配置参数（图中画的过程是第二个内容, 用了PA和K-means）</li>
+<li>identifying important knobs 主要有三个方面的内容：首先是使用Lasso算法进行特征选择；其次在将原先的模型运用于多项式特征来寻找knobs之间的依赖性；最后使用递增的方式选择最佳的参数数量（备注：这执行这个步骤之前需要进行标称属性转化以及数据标准化）</li>
+<li>automated tuning 主要有两个方面的内容：一个是workload mapping 将数据分成n份，利用Euclidean距离得到最相似历史数据； 另一个是 configuration recommendation 采用了 gaussian process regression</li>
+</ul>
+</li>
+<li>
+<p>实验结果</p>
+<ul>
+<li>采用递增方式选择最佳的参数数量的有效性
+<img src="note_1_picture/increamental.png" /></li>
+<li>将OtterTune和iTuned进行比较
+<img src="note_1_picture/compare.png" /> </li>
+</ul>
+</li>
+</ol>
+<h3>评注</h3>
+<ol>
+<li>
+优点
+<ul>
+<li>速度快</li>
+<li>利用了大量的历史数据</li>
+<li>基本不需要人工参与，基本实现自动化</li>
+<li>能够适应不同的数据库管理系统</li>
+</ul>
+</li>
+<li>
+缺点
+<ul>
+<li>训练的时间已经很长</li>
+<li>所采用的的训练模型都是已有的简单模型</li>
+</ul>
+</li>
+</ol>
+<h3>思考与启发</h3>
+<ol>
+<li>文章中所利用的找关键配置参数的方法，可以移植借鉴</li>
+<li>使用Online-learning的方式不断提升训练效果</li>
+<li>gaussian process regression</li>
+</ol>
+<h3>参考文献</h3>
+<p>[1] A.A.Soror, U.F.Minhas, A.Aboulnaga, K.Salem, P.Kokosielis, ans S.Kamath.Automatic      virtual machine configuration for database workloads.In SigMod, pages 953-966, 2008</p>
+<p>[2] K.Dias, M.Ramacher, U.Shaft, V.Venkataramani, and G.Wood.Automatic performance diagnosis and tuning in oracle.In CidR, 2005</p>
+<p>[3]D.N.Tran, P.C Huynh, Y.C.Tay, and A.K.H.Tung.A new appraoch to dynamic self-tuning of database buffers.Trans.Storage, 4(1):3:1-3:25, May 2008.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
