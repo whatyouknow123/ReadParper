@@ -14,9 +14,11 @@ Modeling User Runtime Estimates
 
 # 效果
 in comparison to previous models, simulations that utilize our model are better in reproducing scheduling behavior similar to that observed when using real estimates.
-# 具体内容
-## 简介
+
+# 介绍
+1. killed jobs 和<90secjobs的分布是很不规律的，ok jobs大致会呈现uniform-like histogram
+2. 
 
 # 总结
-1.本模型的目的在于模拟用户的估计运行时间而不是在于获取的正确的运行时间
+1.本模型的目的在于模拟用户的估计运行时间而不是在于获取正确的运行时间
 
